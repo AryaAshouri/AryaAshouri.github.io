@@ -1,0 +1,317 @@
+* {
+  padding:0;
+  margin:0;
+}
+* {
+    padding:0;
+    margin:0;
+    scroll-behavior:smooth;
+}
+*:focus {
+    outline:none;
+}
+::-webkit-scrollbar {
+  width:0px;
+}
+::-webkit-scrollbar-thumb {
+  background:none;
+  border-radius:none;
+}
+::placeholder {
+    color:rgb(255, 255, 255);
+    opacity:0.8;
+}
+Body {
+  background:black;
+}
+p {
+  font-family:Aviny;
+  font-size:30px;
+  color:white;
+}
+a {
+  text-decoration:none;
+  color:white;
+}
+#header {
+  background:rgb(0,225,255);
+  width:95%;
+  height:60px;
+  border-radius:10px;
+  justify-content:center;
+  display:flex;
+  margin:30px auto;
+  cursor:context-menu;
+}
+#header-text {
+  text-align:center;
+  margin:3px 10px;
+  display:inline-block;
+  cursor:pointer;
+  transition:0.3s;
+}
+#header-text:hover {
+  font-size:36px;
+  margin-top:-10px;
+}
+#skill-section {
+  justify-content:center;
+  display:flex;
+  margin:-20px auto;
+}
+#skill-template {
+  background:rgb(0,225,255);
+  width:280px;
+  height:420px;
+  border-radius:20px;
+  margin:100px auto;
+  transition:0.3s;
+}
+#skill-template:hover {
+  transform:scale(1.05);
+}
+#project-section {
+  justify-content:center;
+  display:flex;
+  margin:-20px auto;
+}
+#project-template {
+  background:rgb(0,225,255);
+  width:400px;
+  height:380px;
+  border-radius:20px;
+  margin:100px auto;
+  transition:0.3s;
+}
+#project-template:hover {
+  transform:scale(1.05);
+}
+#resume-section {
+  justify-content:center;
+  display:flex;
+  margin:-20px auto;
+}
+#resume-template {
+  background:rgb(0,215,255);
+  width:620px;
+  height:340px;
+  border-radius:20px;
+  margin:100px auto;
+  transition:0.3s;
+}
+#inner-resume-template {
+  background:rgb(0,225,255);
+  width:540px;
+  height:260px;
+  border-radius:20px;
+  margin:-110px auto;
+  transition:0.3s;
+}
+#resume-template:hover {
+  transform:scale(1.05);
+}
+#resume-title {
+  font-family:Aviny;
+  font-size:40px;
+  margin:150px auto;
+  color:white;
+  padding-top:65px;
+  text-align:center;
+}
+#resume-desc {
+  font-family:Vazir;
+  font-size:16px;
+  color:white;
+  width:300px;
+  height:50px;
+  margin:-150px auto;
+  text-align:center;
+}
+#contact-section {
+  justify-content:center;
+  display:flex;
+  margin:-20px auto;
+}
+#contact-template {
+  background:rgb(0,225,255);
+  width:280px;
+  height:420px;
+  border-radius:20px;
+  margin:100px auto;
+  transition:0.3s;
+}
+#contact-template:hover {
+  transform:scale(1.05);
+}
+.contact_icon {
+  width:140px;
+  height:140px;
+  margin:30px auto;
+  justify-content:center;
+  display:flex;
+}
+.contact_title {
+  font-family:Aviny;
+  font-size:32px;
+  color:white;
+  text-align:center;
+  margin:-20px auto;
+}
+.contact_desc {
+  font-family:Vazir;
+  background-color:none;
+  width:230px;
+  height:170px;
+  font-size:16px;
+  color:white;
+  text-align:center;
+  margin:20px auto;
+}
+.skill_icon {
+  width:140px;
+  height:140px;
+  margin:30px auto;
+  justify-content:center;
+  display:flex;
+}
+.skill_title {
+  font-family:Aviny;
+  font-size:32px;
+  color:white;
+  text-align:center;
+  margin:-20px auto;
+}
+.skill_desc {
+  font-family:Vazir;
+  background-color:none;
+  width:230px;
+  height:170px;
+  font-size:16px;
+  color:white;
+  text-align:center;
+  margin:20px auto;
+}
+.projects_title {
+  font-family:Aviny;
+  font-size:44px;
+  color:white;
+  text-align:center;
+  margin:10px; auto;
+}
+.projects_image {
+  width:340px;
+  height:200px;
+  border-radius:20px;
+  display:flex;
+  justify-content:center;
+  margin:-10px auto;
+}
+.projects_desc {
+  font-family:Vazir;
+  font-size:18px;
+  color:white;
+  text-align:center;
+  background-color:none;
+  width:340px;
+  height:70px;
+  margin:20px auto;
+}
+#main-text {
+  font-family:Aviny;
+  font-size:50px;
+  text-align:center;
+}
+#main-text {
+  font-size:44px;
+}
+@media only screen and (max-width: 900px) {
+  #header-text {
+    font-size:22px;
+    margin:10px 7px;
+  }
+  #skill-section {
+    flex-direction:column;
+    margin-top:50px;
+  }
+  #skill-template {
+    margin-top:-70px;
+    width:300px;
+  }
+  #project-section {
+    flex-direction:column;
+    margin-top:50px;
+  }
+  #project-template {
+    margin-top:-70px;
+    width:300px;
+    height:300px;
+  }
+  #resume-section {
+    flex-direction:column;
+    margin-top:50px;
+  }
+  #resume-template {
+    margin-top:-70px;
+    width:300px;
+    height:220px;
+  }
+  #contact-section {
+    flex-direction:column;
+    margin-top:50px;
+  }
+  #contact-template {
+    margin-top:-70px;
+    width:300px;
+  }
+  #inner-resume-template {
+    width:240px;
+    height:160px;
+    margin-top:30px;
+    margin-left:30px;
+    position:absolute;
+  }
+  #resume-title {
+    font-size:28px;
+    position:absolute;
+    margin-top:-30px;
+    margin-left:22px;
+  }
+  #resume-desc {
+    font-size:10px;
+    background:none;
+    width:180px;
+    margin-top:80px;
+  }
+  .projects_title {
+    font-size:36px;
+  }
+  .projects_image {
+    width:240px;
+    height:160px;
+  }
+  .projects_desc {
+    font-size:12px;
+    background:none;
+    width:225px;
+  }
+  #skill-section {
+    margin-top:100px;
+  }
+  #project-section {
+    margin-top:100px;
+  }
+  #resume-section {
+    margin-top:100px;
+  }
+  #contact-section {
+    margin-top:100px;
+  }
+}
+@font-face {
+    font-family: Aviny;
+    src: url('../font/Aviny.ttf');
+}
+@font-face {
+    font-family: Vazir;
+    src: url('../font/Vazir.ttf');
+}
