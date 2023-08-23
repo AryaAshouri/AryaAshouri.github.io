@@ -34,7 +34,7 @@ a {
   color:white;
 }
 #header {
-  background:rgb(0,225,255);
+  background:rgb(255,215,0);
   width:95%;
   height:60px;
   border-radius:10px;
@@ -60,7 +60,7 @@ a {
   margin:-20px auto;
 }
 #skill-template {
-  background:rgb(0,225,255);
+  background:rgb(255,215,0);
   width:280px;
   height:420px;
   border-radius:20px;
@@ -76,12 +76,12 @@ a {
   margin:-20px auto;
 }
 #project-template {
-  background:rgb(0,225,255);
+  background:rgb(255,215,0);
   width:400px;
   height:380px;
   border-radius:20px;
   margin:100px auto;
-  transition:0.3s;
+  transition:0.4s;
 }
 #project-template:hover {
   transform:scale(1.05);
@@ -92,20 +92,20 @@ a {
   margin:-20px auto;
 }
 #resume-template {
-  background:rgb(0,215,255);
+  background:rgb(255,215,0);
   width:620px;
   height:340px;
   border-radius:20px;
   margin:100px auto;
-  transition:0.3s;
+  transition:0.4s;
 }
 #inner-resume-template {
-  background:rgb(0,225,255);
+  background:rgb(255,225,0);
   width:540px;
   height:260px;
   border-radius:20px;
   margin:-110px auto;
-  transition:0.3s;
+  transition:0.4s;
 }
 #resume-template:hover {
   transform:scale(1.05);
@@ -133,7 +133,7 @@ a {
   margin:-20px auto;
 }
 #contact-template {
-  background:rgb(0,225,255);
+  background:rgb(255,215,0);
   width:280px;
   height:420px;
   border-radius:20px;
@@ -228,7 +228,7 @@ a {
 #main-section {
   width:95%;
   height:490px;
-  background:rgb(0,225,255);
+  background:rgb(255,215,0);
   justify-content:center;
   display:flex;
   border-radius:10px;
@@ -237,7 +237,7 @@ a {
 #cat_picture {
   justify-content:center;
   display:flex;
-  margin:150px auto;
+  margin:140px auto;
   width:352px;
   height:229px;
 }
