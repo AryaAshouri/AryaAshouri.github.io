@@ -234,6 +234,18 @@ a {
   border-radius:10px;
   margin:30px auto;
 }
+#cat_picture {
+  justify-content:center;
+  display:flex;
+  margin:150px auto;
+  width:352px;
+  height:229px;
+}
+#info_text {
+  justify-content:center;
+  display:flex;
+  margin:125px auto;
+}
 @media only screen and (max-width: 900px) {
   #header-text {
     font-size:22px;
@@ -315,6 +327,17 @@ a {
   }
   #contact-section {
     margin-top:100px;
+  }
+  #main-section {
+    height:300px;
+  }
+  #info_text {
+    display:none;
+  }
+  #cat_picture {
+    margin-top:230px;
+    width:252px;
+    height:159px;
   }
 }
 @font-face {
