@@ -159,7 +159,6 @@ a {
 }
 .contact_desc {
   font-family:Vazir;
-  background-color:none;
   width:230px;
   height:170px;
   font-size:16px;
@@ -183,7 +182,6 @@ a {
 }
 .skill_desc {
   font-family:Vazir;
-  background-color:none;
   width:230px;
   height:170px;
   font-size:16px;
@@ -211,7 +209,6 @@ a {
   font-size:18px;
   color:white;
   text-align:center;
-  background-color:none;
   width:340px;
   height:70px;
   margin:20px auto;
