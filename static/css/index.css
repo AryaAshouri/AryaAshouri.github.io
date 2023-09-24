@@ -1,37 +1,44 @@
 * {
-  padding:0;
-  margin:0;
-}
-* {
-    padding:0;
-    margin:0;
-    scroll-behavior:smooth;
+  padding:0px;
+  margin:0px;
+  scroll-behavior:smooth;
 }
 *:focus {
-    outline:none;
+  outline:none;
+}
+:root {
+  --main-bg-color:#A6E1FA;
+  --darker-bg-color:#57cdff;
+  --dark-bg-color:#0e101c;
+  --darker-dark-color:#12141f;
 }
 ::-webkit-scrollbar {
   width:0px;
 }
-::-webkit-scrollbar-thumb {
-  background:none;
-  border-radius:none;
+::-webkit-scrollbar-track {
+  border-radius:10px;
+  background-color:none;
 }
 ::placeholder {
-    color:rgb(255, 255, 255);
-    opacity:0.8;
+  color:white;
+  opacity:0.7;
 }
-Body {
-  background:black;
+a {
+  text-decoration:none;
+  color:white;
 }
 p {
   font-family:Aviny;
   font-size:30px;
   color:white;
 }
-a {
-  text-decoration:none;
-  color:white;
+input::selection {
+  background-color: transparent;
+}
+Body {
+  background-color:black;
+  user-select:none;
+  overflow-x:hidden;
 }
 #header {
   background:rgb(255,215,0);
@@ -66,6 +73,7 @@ a {
   border-radius:20px;
   margin:100px auto;
   transition:0.3s;
+  cursor:default;
 }
 #skill-template:hover {
   transform:scale(1.05);
