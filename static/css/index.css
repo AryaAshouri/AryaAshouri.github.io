@@ -3,14 +3,12 @@
   margin:0px;
   scroll-behavior:smooth;
 }
+:root {
+  --main-theme-color:rgb(92, 50, 168);
+  --another-theme-color:rgb(98, 57, 173);
+}
 *:focus {
   outline:none;
-}
-:root {
-  --main-bg-color:#A6E1FA;
-  --darker-bg-color:#57cdff;
-  --dark-bg-color:#0e101c;
-  --darker-dark-color:#12141f;
 }
 ::-webkit-scrollbar {
   width:0px;
@@ -41,7 +39,7 @@ Body {
   overflow-x:hidden;
 }
 #header {
-  background:rgb(255,215,0);
+  background:var(--main-theme-color);
   width:95%;
   height:60px;
   border-radius:10px;
@@ -67,7 +65,7 @@ Body {
   margin:-20px auto;
 }
 #skill-template {
-  background:rgb(255,215,0);
+  background:var(--main-theme-color);
   width:280px;
   height:420px;
   border-radius:20px;
@@ -84,7 +82,7 @@ Body {
   margin:-20px auto;
 }
 #project-template {
-  background:rgb(255,215,0);
+  background:var(--main-theme-color);
   width:400px;
   height:380px;
   border-radius:20px;
@@ -100,7 +98,7 @@ Body {
   margin:-20px auto;
 }
 #resume-template {
-  background:rgb(255,215,0);
+  background:var(--main-theme-color);
   width:620px;
   height:340px;
   border-radius:20px;
@@ -108,7 +106,7 @@ Body {
   transition:0.4s;
 }
 #inner-resume-template {
-  background:rgb(255,225,0);
+  background:var(--another-theme-color);
   width:540px;
   height:260px;
   border-radius:20px;
@@ -141,7 +139,7 @@ Body {
   margin:-20px auto;
 }
 #contact-template {
-  background:rgb(255,215,0);
+  background:var(--main-theme-color);
   width:280px;
   height:420px;
   border-radius:20px;
@@ -233,7 +231,7 @@ Body {
 #main-section {
   width:95%;
   height:490px;
-  background:rgb(255,215,0);
+  background:var(--main-theme-color);
   justify-content:center;
   display:flex;
   border-radius:10px;
