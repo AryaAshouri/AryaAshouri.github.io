@@ -4,17 +4,17 @@
   scroll-behavior:smooth;
 }
 :root {
-  --main-theme-color:rgb(92, 50, 168);
-  --another-theme-color:rgb(98, 57, 173);
+  --main-theme-color:rgb(0, 187, 255);
+  --another-theme-color:rgb(51, 201, 255);
+  --another-deep-color:rgb(18, 193, 255);
 }
 *:focus {
   outline:none;
 }
 ::-webkit-scrollbar {
-  width:0px;
+  display:none;
 }
 ::-webkit-scrollbar-track {
-  border-radius:10px;
   background-color:none;
 }
 ::placeholder {
@@ -25,46 +25,67 @@ a {
   text-decoration:none;
   color:white;
 }
-p {
-  font-family:Aviny;
-  font-size:30px;
-  color:white;
-}
 input::selection {
-  background-color: transparent;
+  background-color:transparent;
 }
 Body {
   background-color:black;
   user-select:none;
   overflow-x:hidden;
 }
-#header {
+.header {
   background:var(--main-theme-color);
+  border-radius:10px;
   width:95%;
   height:60px;
-  border-radius:10px;
   justify-content:center;
   display:flex;
   margin:30px auto;
   cursor:context-menu;
 }
-#header-text {
+.header-text {
+  color:white;
+  font-family:Aviny;
+  font-size:30px;
   text-align:center;
   margin:3px 10px;
   display:inline-block;
   cursor:pointer;
   transition:0.3s;
 }
-#header-text:hover {
+.header-text:hover {
   font-size:36px;
   margin-top:-10px;
 }
-#skill-section {
+#main-section {
+  background:var(--main-theme-color);
+  border-radius:10px;
+  width:95%;
+  height:490px;
+  margin:30px auto;
+  justify-content:center;
+  display:flex;
+}
+.main-icon {
+  justify-content:center;
+  display:flex;
+  margin:140px auto;
+  width:352px;
+  height:229px;
+}
+#title-text {
+  font-family:Aviny;
+  font-size:44px;
+  color:white;
+  text-align:center;
+  margin-top:200px;
+}
+#about-template {
   justify-content:center;
   display:flex;
   margin:-20px auto;
 }
-#skill-template {
+.about-section {
   background:var(--main-theme-color);
   width:280px;
   height:420px;
@@ -73,31 +94,120 @@ Body {
   transition:0.3s;
   cursor:default;
 }
-#skill-template:hover {
+.about-section:hover {
   transform:scale(1.05);
 }
-#project-section {
+.about-icon {
+  width:140px;
+  height:140px;
+  margin:30px auto;
+  justify-content:center;
+  display:flex;
+}
+.about-title {
+  font-family:Aviny;
+  font-size:32px;
+  color:white;
+  text-align:center;
+  margin:-20px auto;
+}
+.about-description {
+  font-family:Vazir;
+  font-size:16px;
+  color:white;
+  width:230px;
+  height:170px;
+  text-align:center;
+  margin:20px auto;
+}
+#poster-template {
   justify-content:center;
   display:flex;
   margin:-20px auto;
 }
-#project-template {
+.poster-section {
   background:var(--main-theme-color);
-  width:400px;
-  height:380px;
   border-radius:20px;
+  width:400px;
+  height:400px;
   margin:100px auto;
   transition:0.4s;
 }
-#project-template:hover {
+.poster-section:hover {
   transform:scale(1.05);
 }
-#resume-section {
+.poster-title {
+  background:var(--another-theme-color);
+  border-radius:20px 20px 0 0;
+  width:340px;
+  height:60px;
+  border:none;
+  font-family:Aviny;
+  font-size:36px;
+  color:white;
+  text-align:center;
+  align-items:center;
+  justify-content:center;
+  display:flex;
+  margin:30px auto;
+  transition:0.4s;
+  cursor:pointer
+}
+.poster-title:hover {
+  background:var(--another-deep-color);
+}
+.poster-image-container {
+  background:var(--another-theme-color);
+  width:340px;
+  height:200px;
+  border:none;
+  font-family:Aviny;
+  font-size:44px;
+  color:white;
+  text-align:center;
+  align-items:center;
+  justify-content:center;
+  display:flex;
+  margin:-20px auto;
+  transition:0.4s;
+  cursor:pointer
+}
+.poster-image-container:hover {
+  background:var(--another-deep-color);
+}
+.poster-image {
+  width:340px;
+  height:200px;
+  display:flex;
+  justify-content:center;
+  margin:-20px auto;
+}
+.poster-button {
+  background:var(--another-theme-color);
+  border-radius:0 0 20px 20px;
+  width:340px;
+  height:60px;
+  border:none;
+  font-family:Aviny;
+  font-size:22px;
+  color:white;
+  text-align:center;
+  justify-content:center;
+  padding-top:10px;
+  display:flex;
+  margin:30px auto;
+  transition:0.4s;
+  cursor:pointer
+}
+.poster-button:hover {
+  background:var(--another-deep-color);
+}
+#video-template {
   justify-content:center;
   display:flex;
   margin:-20px auto;
 }
-#resume-template {
+.video-section {
   background:var(--main-theme-color);
   width:620px;
   height:340px;
@@ -105,7 +215,7 @@ Body {
   margin:100px auto;
   transition:0.4s;
 }
-#inner-resume-template {
+.inner-video-section {
   background:var(--another-theme-color);
   width:540px;
   height:260px;
@@ -113,18 +223,18 @@ Body {
   margin:-110px auto;
   transition:0.4s;
 }
-#resume-template:hover {
+.video-section:hover {
   transform:scale(1.05);
 }
-#resume-title {
+.video-title {
   font-family:Aviny;
   font-size:40px;
-  margin:150px auto;
   color:white;
+  margin:150px auto;
   padding-top:65px;
   text-align:center;
 }
-#resume-desc {
+.video-description {
   font-family:Vazir;
   font-size:16px;
   color:white;
@@ -133,12 +243,94 @@ Body {
   margin:-150px auto;
   text-align:center;
 }
-#contact-section {
+#podcast-template {
   justify-content:center;
   display:flex;
   margin:-20px auto;
 }
+.podcast-section {
+  background:var(--main-theme-color);
+  border-radius:20px;
+  width:400px;
+  height:400px;
+  margin:100px auto;
+  transition:0.4s;
+}
+.podcast-section:hover {
+  transform:scale(1.05);
+}
+.podcast-title {
+  background:var(--another-theme-color);
+  border-radius:20px 20px 0 0;
+  width:340px;
+  height:60px;
+  border:none;
+  font-family:Aviny;
+  font-size:36px;
+  color:white;
+  text-align:center;
+  align-items:center;
+  justify-content:center;
+  display:flex;
+  margin:30px auto;
+  transition:0.4s;
+  cursor:pointer
+}
+.podcast-title:hover {
+  background:var(--another-deep-color);
+}
+.podcast-image-container {
+  background:var(--another-theme-color);
+  width:340px;
+  height:200px;
+  border:none;
+  font-family:Aviny;
+  font-size:44px;
+  color:white;
+  text-align:center;
+  align-items:center;
+  justify-content:center;
+  display:flex;
+  margin:-20px auto;
+  transition:0.4s;
+  cursor:pointer
+}
+.podcast-image-container:hover {
+  background:var(--another-deep-color);
+}
+.podcast-image {
+  width:340px;
+  height:200px;
+  display:flex;
+  justify-content:center;
+  margin:-20px auto;
+}
+.podcast-button {
+  background:var(--another-theme-color);
+  border-radius:0 0 20px 20px;
+  width:340px;
+  height:60px;
+  border:none;
+  font-family:Aviny;
+  font-size:22px;
+  color:white;
+  text-align:center;
+  justify-content:center;
+  padding-top:10px;
+  display:flex;
+  margin:30px auto;
+  transition:0.4s;
+  cursor:pointer
+}
+.podcast-button:hover {
+  background:var(--another-deep-color);
+}
 #contact-template {
+  justify-content:center;
+  display:flex;
+  margin:-20px auto;
+}
+.contact-section {
   background:var(--main-theme-color);
   width:280px;
   height:420px;
@@ -146,214 +338,163 @@ Body {
   margin:100px auto;
   transition:0.3s;
 }
-#contact-template:hover {
+.contact-section:hover {
   transform:scale(1.05);
 }
-.contact_icon {
+.contact-icon {
   width:140px;
   height:140px;
-  margin:30px auto;
   justify-content:center;
   display:flex;
+  margin:30px auto;
+  cursor:pointer;
+  transition:0.5s;
 }
-.contact_title {
+.contact-icon:hover {
+  transform:rotate(180deg);
+}
+.contact-title {
   font-family:Aviny;
   font-size:32px;
   color:white;
   text-align:center;
   margin:-20px auto;
 }
-.contact_desc {
+.contact-description {
   font-family:Vazir;
-  width:230px;
-  height:170px;
   font-size:16px;
   color:white;
-  text-align:center;
-  margin:20px auto;
-}
-.skill_icon {
-  width:140px;
-  height:140px;
-  margin:30px auto;
-  justify-content:center;
-  display:flex;
-}
-.skill_title {
-  font-family:Aviny;
-  font-size:32px;
-  color:white;
-  text-align:center;
-  margin:-20px auto;
-}
-.skill_desc {
-  font-family:Vazir;
   width:230px;
   height:170px;
-  font-size:16px;
-  color:white;
   text-align:center;
   margin:20px auto;
 }
-.projects_title {
-  font-family:Aviny;
-  font-size:44px;
-  color:white;
-  text-align:center;
-  margin:10px; auto;
-}
-.projects_image {
-  width:340px;
-  height:200px;
-  border-radius:20px;
-  display:flex;
-  justify-content:center;
-  margin:-10px auto;
-}
-.projects_desc {
-  font-family:Vazir;
-  font-size:18px;
-  color:white;
-  text-align:center;
-  width:340px;
-  height:70px;
-  margin:20px auto;
-}
-#main-text {
-  font-family:Aviny;
-  font-size:50px;
-  text-align:center;
-  margin-top:200px;
-}
-#main-text {
-  font-size:44px;
-}
-#main-section {
-  width:95%;
-  height:490px;
-  background:var(--main-theme-color);
-  justify-content:center;
-  display:flex;
-  border-radius:10px;
-  margin:30px auto;
-}
-#cat_picture {
-  justify-content:center;
-  display:flex;
-  margin:140px auto;
-  width:352px;
-  height:229px;
-}
-#info_text {
-  justify-content:center;
-  display:flex;
-  margin:125px auto;
-}
-#footer {
+.footer {
   background:var(--main-theme-color);
   width:100%;
   height:360px;
   margin-top:100px;
 }
+@font-face {
+    font-family:Aviny;
+    src: url('../font/Aviny.ttf');
+}
+@font-face {
+    font-family:Vazir;
+    src: url('../font/Vazir.ttf');
+}
 @media only screen and (max-width: 900px) {
-  #header-text {
-    font-size:22px;
-    margin:10px 7px;
-  }
-  #skill-section {
-    flex-direction:column;
-    margin-top:50px;
-  }
-  #skill-template {
-    margin-top:-70px;
-    width:300px;
-  }
-  #project-section {
-    flex-direction:column;
-    margin-top:50px;
-  }
-  #project-template {
-    margin-top:-70px;
-    width:300px;
+  #main-section {
     height:300px;
   }
-  #resume-section {
-    flex-direction:column;
-    margin-top:50px;
+  .main-icon {
+    width:340px;
+    height:250px;
   }
-  #resume-template {
+  .header-text {
+    font-size:22px;
+    margin:11px 7px;
+  }
+  .header-text:hover {
+    font-size:28px;
+    margin:0px 7px;
+  }
+  #about-template {
+    flex-direction:column;
+    margin-top:100px;
+  }
+  .about-section {
+    margin-top:-70px;
+    width:300px;
+  }
+  #poster-template {
+    flex-direction:column;
+    margin-top:100px;
+  }
+  .poster-section {
+    margin-top:-70px;
+    width:300px;
+    height:340px;
+  }
+  .poster-title {
+    width:240px;
+    height:50px;
+    font-size:26px;
+  }
+  .poster-image-container {
+    width:240px;
+    height:160px;
+  }
+  .poster-image {
+    width:280px;
+    height:160px;
+  }
+  .poster-button {
+    width:240px;
+    height:50px;
+    font-size:18px;
+  }
+  #video-template {
+    flex-direction:column;
+    margin-top:100px;
+  }
+  .video-section {
     margin-top:-70px;
     width:300px;
     height:220px;
   }
-  #contact-section {
-    flex-direction:column;
-    margin-top:50px;
-  }
-  #contact-template {
-    margin-top:-70px;
-    width:300px;
-  }
-  #inner-resume-template {
+  .inner-video-section {
     width:240px;
     height:160px;
     margin-top:30px;
     margin-left:30px;
     position:absolute;
   }
-  #resume-title {
+  .video-title {
     font-size:28px;
     position:absolute;
     margin-top:-30px;
     margin-left:22px;
   }
-  #resume-desc {
+  .video-description {
     font-size:10px;
     background:none;
     width:180px;
     margin-top:80px;
   }
-  .projects_title {
-    font-size:36px;
+  #podcast-template {
+    flex-direction:column;
+    margin-top:100px;
   }
-  .projects_image {
+  .podcast-section {
+    margin-top:-70px;
+    width:300px;
+    height:340px;
+  }
+  .podcast-title {
+    width:240px;
+    height:50px;
+    font-size:26px;
+  }
+  .podcast-image-container {
     width:240px;
     height:160px;
   }
-  .projects_desc {
-    font-size:12px;
-    background:none;
-    width:225px;
+  .podcast-image {
+    width:280px;
+    height:160px;
   }
-  #skill-section {
+  .podcast-button {
+    width:240px;
+    height:50px;
+    font-size:18px;
+  }
+  #contact-template {
+    flex-direction:column;
     margin-top:100px;
   }
-  #project-section {
-    margin-top:100px;
+  .contact-section {
+    margin-top:-70px;
+    width:300px;
   }
-  #resume-section {
-    margin-top:100px;
-  }
-  #contact-section {
-    margin-top:100px;
-  }
-  #main-section {
-    height:300px;
-  }
-  #info_text {
-    display:none;
-  }
-  #cat_picture {
-    margin-top:230px;
-    width:252px;
-    height:159px;
-  }
-}
-@font-face {
-    font-family: Aviny;
-    src: url('../font/Aviny.ttf');
-}
-@font-face {
-    font-family: Vazir;
-    src: url('../font/Vazir.ttf');
 }

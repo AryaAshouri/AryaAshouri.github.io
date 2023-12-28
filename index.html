@@ -1,114 +1,118 @@
 <html>
   <head>
-    <link rel="stylesheet" href="static/css/index.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="icon" href="static/img/icon/icon.png">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="icon" href="static/img/icon/icon.png">
     <title>
-      Arya Ashouri
+      آریا آشوری
     </title>
   </head>
   <body>
-    <header id="header" data-aos="fade-down">
+    <header class="header" data-aos="fade-down">
       <span>
-        <p onclick="reload_page()" title="home" id="header-text">ریشه</p>
-        <p onclick="go_skills()" title="skill" id="header-text">مهارت</p>
-        <p onclick="go_projects()" title="project" id="header-text">پروژه</p>
-        <p onclick="go_resume()" title="resume" id="header-text">رزومه</p>
-        <p onclick="go_contact()" title="contact" id="header-text">ارتباط</p>
+        <p onclick="reload_page()" title="Home" class="header-text">خانه</p>
+        <p onclick="go_skill()" title="About" class="header-text">مهارت</p>
+        <p onclick="go_project()" title="Poster" class="header-text">پروژه</p>
+        <p onclick="go_resume()" title="Podcast" class="header-text">رزومه</p>
+        <p onclick="go_contact()" title="Contact" class="header-text">ارتباط</p>
       </span>
     </header>
 
     <div data-aos="fade-down" id="main-section">
-      <img data-aos="fade-down" data-aos-duration="100" id="cat_picture" src="static\img\pic/cat.png">
+      <img class="main-icon" src="static/img/icon/main.png">
     </div>
 
-    <p data-aos="fade-up" data-aos-duration="750" id="main-text">مهارت های من</p>
-    <span data-aos="fade-up" data-aos-duration="750" id="skill-section">
-      <div id="skill-template">
-          <img class="skill_icon" src="static/img/icon/wb1.png">
-          <p class="skill_title">طراحی وبسایت و وبلاگ</p>
-          <div class="skill_desc"> طراحی صفحات وب بوسیله بروز ترین تکنولوژی های روز همراه با پایگاه داده و بک اند. دیزاین سایت همراه با برنامه های حرفه ای شامل فیگما و فتوشاپ و ادوبی ایلاستریتور</div>
+    <p data-aos="fade-up" data-aos-duration="750" id="title-text">برخی مهارت های من</p>
+    <span data-aos="fade-up" data-aos-duration="750" id="about-template">
+      <div class="about-section">
+          <img class="about-icon" src="static/img/icon/web.png">
+          <p class="about-title">طراحی وبسایت و وبلاگ</p>
+          <div class="about-description"> طراحی صفحات وب بوسیله بروز ترین تکنولوژی های روز همراه با پایگاه داده و بک اند. دیزاین سایت همراه با برنامه های حرفه ای شامل فیگما و فتوشاپ و ادوبی ایلاستریتور</div>
       </div>
-      <div id="skill-template">
-        <img class="skill_icon" src="static/img/icon/pc1.png">
-        <p class="skill_title">طراحی اپلیکیشن ویندوز</p>
-        <div class="skill_desc">تولید اپلیکیشن و برنامه های تحت ویندوز بوسیله زبان برنامه نویسی پرکاربرد و معروف سی شارپ بخش ویندوز فرم بعلاوه طراحی پایگاه داده برای ذخیره اطلاعات مورد نیاز در آن</div>
+      <div class="about-section">
+        <img class="about-icon" src="static/img/icon/pc.png">
+        <p class="about-title">طراحی اپلیکیشن ویندوز</p>
+        <div class="about-description">تولید اپلیکیشن و برنامه های تحت ویندوز بوسیله زبان برنامه نویسی پرکاربرد و معروف سی شارپ بخش ویندوز فرم بعلاوه طراحی پایگاه داده برای ذخیره اطلاعات مورد نیاز در آن</div>
       </div>
-      <div id="skill-template">
-        <img class="skill_icon" src="static/img/icon/ic1.png">
-        <p class="skill_title">برنامه نویسی ربات و کیت</p>
-        <div class="skill_desc">علاوه بر توسعه و یادگیری زبان های پرکاربرد برای کار با سخت افزار قادر به برنامه نویسی و طراحی کیت های خام ربات به زبان اسمال بیسیک در فضای اختصاصی و حرفه ای بسکام</div>
+      <div class="about-section">
+        <img class="about-icon" src="static/img/icon/ic.png">
+        <p class="about-title">برنامه نویسی ربات و کیت</p>
+        <div class="about-description">علاوه بر توسعه و یادگیری زبان های پرکاربرد برای کار با سخت افزار قادر به برنامه نویسی و طراحی کیت های خام ربات به زبان اسمال بیسیک در فضای اختصاصی و حرفه ای بسکام</div>
       </div>
-      <div id="skill-template">
-        <img class="skill_icon" src="static/img/icon/db1.png">
-        <p class="skill_title">طراحی بانک اطلاعاتی</p>
-        <div class="skill_desc">طراحی و ایجاد بانک های اطلاعاتی برای ذخیره اطلاعات در فضای وب و یا اپ بوسیله دیتابیس های مطرح رده بالا با زبان برنامه نویسی پایتون و البته زبان کاربردی جاواسکریپت</div>
-      </div>
-    </span>
-
-    <p data-aos="fade-up" data-aos-duration="750" style="margin-top:220px;" id="main-text">پروژه های من</p>
-    <span data-aos="fade-up" data-aos-duration="750" id="project-section">
-      <div id="project-template">
-        <p class="projects_title">بازی حدس عدد</p>
-        <a href="https://github.com/AryaAshouri/Guess-csharp-winform"><img class="projects_image" src="static/img/pic/blog.png"></a>
-        <p class="projects_desc">در این پروژه شما عددی رو حدس زده و نسبت به ورودی شما برنامه پاسخ متفاوتی میدهد</p>
-      </div>
-      <div id="project-template">
-        <p class="projects_title">فروشگاه مجازی</p>
-        <a href="https://github.com/AryaAshouri/Webshop-django-app"><img class="projects_image" src="static/img/pic/blog.png"></a>
-        <p class="projects_desc">فروشگاهی اینترنتی با قابلیت های فراوانی از جمله خرید و فروش کالا و اضافه کردن آگهی</p>
-      </div>
-      <div id="project-template">
-        <p class="projects_title">داشبورد گیت هاب</p>
-        <a href="https://github.com/AryaAshouri/Github-django-dashboard"><img class="projects_image" src="static/img/pic/blog.png"></a>
-        <p class="projects_desc">در این فضا میتونید به اطلاعات کاربر های دیگر دسترسی داشته باشید و وارد حساب خود شوید</p>
+      <div class="about-section">
+        <img class="about-icon" src="static/img/icon/db.png">
+        <p class="about-title">طراحی بانک اطلاعاتی</p>
+        <div class="about-description">طراحی و ایجاد بانک های اطلاعاتی برای ذخیره اطلاعات در فضای وب و یا اپ بوسیله دیتابیس های مطرح رده بالا با زبان برنامه نویسی پایتون و البته زبان کاربردی جاواسکریپت</div>
       </div>
     </span>
 
-    <p data-aos="fade-up" data-aos-duration="750" style="margin-top:220px;" id="main-text">رزومه من</p>
-    <span data-aos="fade-up" data-aos-duration="750" id="resume-section">
-      <div id="resume-template">
-        <a href="https://www.github.com/AryaAshouri"><div id="inner-resume-template">
-          <p id="resume-title">برو به گیتهاب من سر بزن</p>
-          <p id="resume-desc">در این بخش از رزومه به بعضی از پروژه هایی که تا به حال انجام دادم یه نگاهی میندازیم</p>
+    <p data-aos="fade-up" data-aos-duration="750" style="margin-top:220px;" id="title-text">آخرین پروژه های من</p>
+    <span data-aos="fade-up" data-aos-duration="750" id="poster-template">
+      <div class="poster-section">
+        <p class="poster-title">پروژه شماره یک</p>
+        <div class="poster-image-container">
+          <img class="poster-image" src="static/img/poster/blog_raw.png">
+        </div>
+        <a href="https://github.com/AryaAshouri/Guess-csharp-winform"><button class="poster-button" onclick="play_podcast()">مشاهده پروژه</button></a>
+      </div>
+      <div class="poster-section">
+        <p class="poster-title">پروژه شماره دو</p>
+        <div class="poster-image-container">
+          <img class="poster-image" src="static/img/poster/blog_raw.png">
+        </div>
+        <a href="https://github.com/AryaAshouri/Github-django-dashboard"><button class="poster-button" onclick="play_podcast()">مشاهده پروژه</button></a>
+      </div>
+      <div class="poster-section">
+        <p class="poster-title">پروژه شماره سه</p>
+        <div class="poster-image-container">
+          <img class="poster-image" src="static/img/poster/blog_raw.png">
+        </div>
+        <a href="https://github.com/AryaAshouri/Webshop-django-app"><button class="poster-button" onclick="play_podcast()">مشاهده پروژه</button></a>
+      </div>
+    </span>
+
+    <p data-aos="fade-up" data-aos-duration="750" style="margin-top:220px;" id="title-text">رزومه و فعالیت های من</p>
+    <span data-aos="fade-up" data-aos-duration="750" id="video-template">
+      <div class="video-section">
+        <a href="https://quera.org/profile/Red_Ninja"><div class="inner-video-section">
+          <p class="video-title">برو به کوئرای من سر بزن</p>
+          <p class="video-description">در این بخش از رزومه به بررسی سوالات الگوریتمی حل شده سایت کوئرا میپردازیم</p>
         </div></a>
       </div>
-      <div id="resume-template">
-        <a href="https://quera.org/profile/Red_Ninja"><div id="inner-resume-template">
-          <p id="resume-title">برو به کوئرای من سر بزن</p>
-          <p id="resume-desc">در این بخش از رزومه به بررسی سوالات الگوریتمی حل شده سایت کوئرا میپردازیم</p>
+      <div class="video-section">
+        <a href="https://www.github.com/aryaashouri"><div class="inner-video-section">
+          <p class="video-title">برو به گیتهاب من سر بزن</p>
+          <p class="video-description">در این بخش از رزومه به بعضی از پروژه هایی که تا به حال انجام دادم یه نگاهی میندازیم</p>
         </div></a>
       </div>
     </span>
 
-    <p data-aos="fade-up" data-aos-duration="750" style="margin-top:220px;" id="main-text">راه های ارتباطی</p>
-    <span data-aos="fade-up" data-aos-duration="750" id="contact-section">
-      <div id="contact-template">
-        <a href="mailto:arya.tesla1856@gmail.com"><img class="contact_icon" src="static/img/icon/id1.png">
-        <p class="contact_title">آیدی شخصی جی میل</p>
-        <p class="contact_desc">خیلی کم پیش میاد که برای صحبت کردن از جیمیل استفاده کنم بنابراین اگر در فضای های گفته شده با من در ارتباط باشید تضمین میکنم که زودتر بازخورد دریافت خواهید کرد</p></a>
+    <p data-aos="fade-up" data-aos-duration="750" style="margin-top:220px;" id="title-text">راه های ارتباطی</p>
+    <span data-aos="fade-up" data-aos-duration="750" id="contact-template">
+      <div class="contact-section">
+        <a href="mailto:arya.tesla1856@gmail.com"><img class="contact-icon" src="static/img/icon/id.png">
+        <p class="contact-title">آدرس شخصی جی میل</p>
+        <p class="contact-description">خیلی کم پیش میاد که برای صحبت کردن از جیمیل استفاده کنم بنابراین اگر در فضای های گفته شده با من در ارتباط باشید تضمین میکنم که زودتر بازخورد دریافت خواهید کرد</p></a>
       </div>
-      <div id="contact-template">
-        <a href="https://t.me/AryaAshouri"><img class="contact_icon" src="static/img/icon/id1.png">
-        <p class="contact_title">آیدی شخصی تلگرام</p>
-        <p class="contact_desc">در حال حاضر و باتوجه به شرایط فعلی فعالیتم در این فضا بشدت زیاد شده به طوری که خودم هم باورم نمیشه و به راحتی میتونید با من ارتباط بگیرید و صحبت کنید</p></a>
+      <div class="contact-section">
+        <a href="https://t.me/AryaAshouri"><img class="contact-icon" src="static/img/icon/id.png">
+        <p class="contact-title">آدرس شخصی تلگرام</p>
+        <p class="contact-description">در حال حاضر و باتوجه به شرایط فعلی فعالیتم در این فضا بشدت زیاد شده به طوری که خودم هم باورم نمیشه و به راحتی میتونید با من ارتباط بگیرید و صحبت کنید</p></a>
       </div>
-      <div id="contact-template">
-        <a href="https://www.discordapp.com/users/1053361308029956148"><img class="contact_icon" src="static/img/icon/id1.png">
-        <p class="contact_title">آیدی شخصی دیسکورد</p>
-        <p class="contact_desc">فعالیت من در دیسکورد به آن شکل نیست و بیشتر برای انجام پروژه های دیسکوردی آنجا فعالیت میکنم و صد البته که سرعت پاسخگویی من اصلا در این بخش راضی کننده نیست</p></a>
+      <div class="contact-section">
+        <a href="https://www.discordapp.com/users/1053361308029956148"><img class="contact-icon" src="static/img/icon/id.png">
+        <p class="contact-title">آدرس شخصی دیسکورد</p>
+        <p class="contact-description">فعالیت من در دیسکورد به آن شکل نیست و بیشتر برای انجام پروژه های دیسکوردی آنجا فعالیت میکنم و صد البته که سرعت پاسخگویی من اصلا در این بخش راضی کننده نیست</p></a>
       </div>
-      <div id="contact-template">
-        <a href="https://web.bale.ai/@arya_ashouri"><img class="contact_icon" src="static/img/icon/id1.png">
-        <p class="contact_title">آیدی پیام رسان بله</p>
-        <p class="contact_desc">فعالیت من در پیام رسان بله زیاد است و به طور کلی برای چت کردن های روزانه از آن استفاده میکنم و شما هم میتونید آنجا به سرعت با من ارتباط بگیرید و صحبت کنید</p></a>
+      <div class="contact-section">
+        <a href="https://web.bale.ai/@arya_ashouri"><img class="contact-icon" src="static/img/icon/id.png">
+        <p class="contact-title">شخصی پیام رسان بله</p>
+        <p class="contact-description">فعالیت من در پیام رسان بله زیاد است و به طور کلی برای چت کردن های روزانه از آن استفاده میکنم و شما هم میتونید آنجا به سرعت با من ارتباط بگیرید و صحبت کنید</p></a>
       </div>
     </span>
-    <div id="footer"></div>
-
+    <div class="footer"></div>
   <script src="static/js/index.js"></script>
   </body>
 </html>
