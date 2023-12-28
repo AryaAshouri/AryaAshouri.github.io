@@ -388,8 +388,9 @@ Body {
     height:300px;
   }
   .main-icon {
-    width:340px;
-    height:250px;
+    margin-top:80px;
+     width:252px;
+     height:159px;
   }
   .header-text {
     font-size:22px;
