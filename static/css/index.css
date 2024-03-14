@@ -4,9 +4,9 @@
   scroll-behavior:smooth;
 }
 :root {
-  --main-theme-color:rgb(0, 187, 255);
-  --another-theme-color:rgb(51, 201, 255);
-  --another-deep-color:rgb(18, 193, 255);
+  --main-theme-color:rgb(137, 137, 176);
+  --another-theme-color:rgb(159, 159, 189);
+  --another-deep-color:rgb(169, 169, 204);
 }
 *:focus {
   outline:none;
@@ -29,7 +29,7 @@ input::selection {
   background-color:transparent;
 }
 Body {
-  background-color:black;
+  background-color:rgb(7, 7, 13);
   user-select:none;
   overflow-x:hidden;
 }
@@ -69,10 +69,18 @@ Body {
 .main-icon {
   justify-content:center;
   display:flex;
-  margin:140px auto;
-  width:352px;
-  height:229px;
+  margin:40px auto;
+  width:400px;
+  height:400px;
+  /* animation-name:Beating;
+  animation-duration:1.5s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate; */
 }
+/* @keyframes Beating {
+  from {transform:scale(1);}
+  to {transform:scale(1.15);}
+} */
 #title-text {
   font-family:Aviny;
   font-size:44px;
