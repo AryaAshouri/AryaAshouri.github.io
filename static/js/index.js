@@ -1,6 +1,3 @@
-function playAudio() {
-  document.getElementById("Cat-voice").play()
-}
 function go_skill(){
   if (window.innerWidth <= 900){
     document.body.scrollTop = 580;

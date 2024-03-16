@@ -4,9 +4,9 @@
   scroll-behavior:smooth;
 }
 :root {
-  --main-theme-color:rgb(137, 137, 176);
-  --another-theme-color:rgb(159, 159, 189);
-  --another-deep-color:rgb(169, 169, 204);
+  --main-theme-color:rgb(30, 27, 51);
+  --another-theme-color:rgb(35, 31, 56);
+  --another-deep-color:rgb(38, 34, 61);
 }
 *:focus {
   outline:none;
@@ -66,20 +66,19 @@ Body {
   justify-content:center;
   display:flex;
 }
-.main-icon {
+#main-icon {
   justify-content:center;
   display:flex;
-  margin:130px auto;
-  width:354px;
-  height:231px;
-  animation-name:Beating;
-  animation-duration:1.5s;
+  margin:80px auto;
+  width:300px;
+  height:300px;
+  animation:Rotaion 3.5s;
   animation-iteration-count:infinite;
-  animation-direction:alternate; */
+  animation-direction:alternate;
 }
-@keyframes Beating {
-  from {transform:scale(1);}
-  to {transform:scale(1.05);}
+@keyframes Rotaion {
+  from { transform:rotate(0deg);}
+  to { transform:rotate(360deg);}
 }
 #title-text {
   font-family:Aviny;
