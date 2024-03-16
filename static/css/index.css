@@ -394,10 +394,10 @@ Body {
   #main-section {
     height:300px;
   }
-  .main-icon {
-    margin-top:80px;
-     width:252px;
-     height:159px;
+  #main-icon {
+    margin-top:50px;
+     width:200px;
+     height:200px;
   }
   .header-text {
     font-size:22px;
