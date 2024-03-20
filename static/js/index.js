@@ -32,7 +32,7 @@ function go_summary(){
 }
 function go_contact(){
   if (window.innerWidth <= 900){
-    document.body.scrollTop = 5980;
+    document.body.scrollTop = 5960;
   }
   else {
     document.body.scrollTop = 3940;
