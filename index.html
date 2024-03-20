@@ -10,16 +10,22 @@
     </title>
   </head>
   <body>
-    <header id="header" data-aos="fade-down">
-      <span>
-        <p onclick="reload_page()" class="header-text">خانه</p>
-        <p onclick="go_skill()" class="header-text">مهارت</p>
-        <p onclick="go_project()" class="header-text">پروژه</p>
-        <p onclick="go_resume()" class="header-text">رزومه</p>
-        <p onclick="go_summary()" class="header-text">درباره</p>
-        <p onclick="go_contact()" class="header-text">ارتباط</p>
-      </span>
-    </header>
+      <header id="header" data-aos="fade-down">
+        <span id="header-language-section">
+          <img onclick="change_language()" id="language-icon" class="language-mode-icon" src="static/img/icon/language.png">
+        </span>
+        <span id="header-option-section">
+          <p onclick="reload_page()" class="header-text">خانه</p>
+          <p onclick="go_skill()" class="header-text">مهارت</p>
+          <p onclick="go_project()" class="header-text">پروژه</p>
+          <p onclick="go_resume()" class="header-text">رزومه</p>
+          <p onclick="go_summary()" class="header-text">درباره</p>
+          <p onclick="go_contact()" class="header-text">ارتباط</p>
+        </span>
+        <span id="header-brightness-section">
+          <img onclick="change_brightness_mode()" id="brightness-icon" class="brightness-mode-icon" src="static/img/icon/light/light.png">
+        </span>
+      </header>
 
     <div data-aos="fade-down" id="main-section">
       <img id="main-icon" src="static/img/icon/icon.png">
@@ -28,22 +34,22 @@
     <p data-aos="fade-up" data-aos-duration="750" id="title-text">مهارت و توانایی ها</p>
     <span data-aos="fade-up" data-aos-duration="750" id="skill-template">
       <div class="skill-section">
-          <img class="skill-icon" src="static/img/icon/web.png">
+          <img class="skill-icon" id="web-icon" src="static/img/icon/dark/web.png">
           <p class="skill-title">طراحی وبسایت و وبلاگ</p>
           <div class="skill-description"> طراحی صفحات وب بوسیله بروز ترین تکنولوژی های روز همراه با پایگاه داده و بک اند. دیزاین سایت همراه با برنامه های حرفه ای شامل فیگما و فتوشاپ و ادوبی ایلاستریتور</div>
       </div>
       <div class="skill-section">
-        <img class="skill-icon" src="static/img/icon/pc.png">
+        <img class="skill-icon" id="pc-icon" src="static/img/icon/dark/pc.png">
         <p class="skill-title">طراحی اپلیکیشن ویندوز</p>
         <div class="skill-description">تولید اپلیکیشن و برنامه های تحت ویندوز بوسیله زبان برنامه نویسی پرکاربرد و معروف سی شارپ بخش ویندوز فرم بعلاوه طراحی پایگاه داده برای ذخیره اطلاعات مورد نیاز در آن</div>
       </div>
       <div class="skill-section">
-        <img class="skill-icon" src="static/img/icon/ic.png">
+        <img class="skill-icon" id="ic-icon" src="static/img/icon/dark/ic.png">
         <p class="skill-title">برنامه نویسی ربات و کیت</p>
         <div class="skill-description">علاوه بر توسعه و یادگیری زبان های پرکاربرد برای کار با سخت افزار قادر به برنامه نویسی و طراحی کیت های خام ربات به زبان اسمال بیسیک در فضای اختصاصی و حرفه ای بسکام</div>
       </div>
       <div class="skill-section">
-        <img class="skill-icon" src="static/img/icon/db.png">
+        <img class="skill-icon" id="db-icon" src="static/img/icon/dark/db.png">
         <p class="skill-title">طراحی بانک اطلاعاتی</p>
         <div class="skill-description">طراحی و ایجاد بانک های اطلاعاتی برای ذخیره اطلاعات در فضای وب و یا اپ بوسیله دیتابیس های مطرح رده بالا با زبان برنامه نویسی پایتون و البته زبان کاربردی جاواسکریپت</div>
       </div>
@@ -112,22 +118,22 @@
     <p data-aos="fade-up" data-aos-duration="750" style="margin-top:220px;" id="title-text">راه های ارتباطی</p>
     <span data-aos="fade-up" data-aos-duration="750" id="contact-template">
       <div class="contact-section">
-        <a href="mailto:arya.tesla1856@gmail.com"><img class="contact-icon" src="static/img/icon/id.png">
+        <a href="mailto:arya.tesla1856@gmail.com"><img class="contact-icon" id="id-icon-1" src="static/img/icon/dark/id.png">
         <p class="contact-title">آدرس شخصی جی میل</p>
         <p class="contact-description">خیلی کم پیش میاد که برای صحبت کردن از جیمیل استفاده کنم بنابراین اگر در فضای های گفته شده با من در ارتباط باشید تضمین میکنم که زودتر بازخورد دریافت خواهید کرد</p></a>
       </div>
       <div class="contact-section">
-        <a href="https://t.me/AryaAshouri"><img class="contact-icon" src="static/img/icon/id.png">
+        <a href="https://t.me/AryaAshouri"><img class="contact-icon" id="id-icon-2" src="static/img/icon/dark/id.png">
         <p class="contact-title">آدرس شخصی تلگرام</p>
         <p class="contact-description">در حال حاضر و باتوجه به شرایط فعلی فعالیتم در این فضا بشدت زیاد شده به طوری که خودم هم باورم نمیشه و به راحتی میتونید با من ارتباط بگیرید و صحبت کنید</p></a>
       </div>
       <div class="contact-section">
-        <a href="https://www.discordapp.com/users/1053361308029956148"><img class="contact-icon" src="static/img/icon/id.png">
+        <a href="https://www.discordapp.com/users/1053361308029956148"><img class="contact-icon" id="id-icon-3" src="static/img/icon/dark/id.png">
         <p class="contact-title">آدرس شخصی دیسکورد</p>
         <p class="contact-description">فعالیت من در دیسکورد به آن شکل نیست و بیشتر برای انجام پروژه های دیسکوردی آنجا فعالیت میکنم و صد البته که سرعت پاسخگویی من اصلا در این بخش راضی کننده نیست</p></a>
       </div>
       <div class="contact-section">
-        <a href="https://web.bale.ai/@arya_ashouri"><img class="contact-icon" src="static/img/icon/id.png">
+        <a href="https://web.bale.ai/@arya_ashouri"><img class="contact-icon" id="id-icon-4" src="static/img/icon/dark/id.png">
         <p class="contact-title">شخصی پیام رسان بله</p>
         <p class="contact-description">فعالیت من در پیام رسان بله زیاد است و به طور کلی برای چت کردن های روزانه از آن استفاده میکنم و شما هم میتونید آنجا به سرعت با من ارتباط بگیرید و صحبت کنید</p></a>
       </div>

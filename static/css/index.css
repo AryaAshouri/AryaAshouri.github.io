@@ -32,6 +32,21 @@ Body {
   background-color:rgb(7, 7, 13);
   user-select:none;
   overflow-x:hidden;
+  transition: background-color 0.5s ease-in-out;
+}
+#header-language-section {
+  flex:1;
+}
+#header-option-section {
+  flex:20;
+  justify-content:center;
+  display:flex;
+}
+#header-brightness-section {
+  flex:1;
+  justify-content:center;
+  display:flex;
+  direction:rtl;
 }
 #header {
   background:var(--main-theme-color);
@@ -48,14 +63,26 @@ Body {
   font-family:Aviny;
   font-size:30px;
   text-align:center;
-  margin:3px 10px;
+  margin:3px 12px;
   display:inline-block;
   cursor:pointer;
   transition:0.3s;
 }
 .header-text:hover {
   font-size:36px;
-  margin-top:-10px;
+  margin-top:-2px;
+}
+.language-mode-icon {
+  width:45px;
+  height:45px;
+  margin-top:7px;
+  margin-left:8px;
+}
+.brightness-mode-icon {
+  width:45px;
+  height:45px;
+  margin-top:7px;
+  margin-right:-1px;
 }
 #main-section {
   background:var(--main-theme-color);
@@ -343,6 +370,29 @@ Body {
     src: url('../font/Vazir.ttf');
 }
 @media only screen and (max-width: 900px) {
+  #header-option-section {
+    margin-left:-30px;
+  }
+  .header-text {
+    font-size:20px;
+    margin:13px 7px;
+  }
+  .header-text:hover {
+    font-size:28px;
+    margin:6px 8px;
+  }
+  .language-mode-icon {
+    width:40px;
+    height:40px;
+    margin-left:10px;
+    margin-top:10px;
+  }
+  .brightness-mode-icon {
+    width:40px;
+    height:40px;
+    margin-left:-35px;
+    margin-top:10px;
+  }
   #main-section {
     height:300px;
   }
@@ -350,14 +400,6 @@ Body {
     margin-top:50px;
      width:200px;
      height:200px;
-  }
-  .header-text {
-    font-size:22px;
-    margin:11px 7px;
-  }
-  .header-text:hover {
-    font-size:28px;
-    margin:0px 7px;
   }
   #skill-template {
     flex-direction:column;
