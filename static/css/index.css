@@ -77,12 +77,14 @@ Body {
   height:45px;
   margin-top:7px;
   margin-left:8px;
+  cursor:pointer;
 }
 .brightness-mode-icon {
   width:45px;
   height:45px;
   margin-top:7px;
   margin-right:-1px;
+  cursor:pointer;
 }
 #main-section {
   background:var(--main-theme-color);
@@ -126,7 +128,7 @@ Body {
   border-radius:20px;
   margin:100px auto;
   transition:0.4s;
-  cursor:default;
+  cursor:pointer;
 }
 .skill-section:hover {
   transform:scale(1.04);
@@ -166,6 +168,7 @@ Body {
   height:400px;
   margin:100px auto;
   transition:0.4s;
+  cursor:pointer;
 }
 .project-section:hover {
   transform:scale(1.04);
@@ -248,6 +251,7 @@ Body {
   border-radius:20px;
   margin:100px auto;
   transition:0.4s;
+  cursor:pointer;
 }
 .inner-resume-section {
   background:var(--another-theme-color);
@@ -277,23 +281,24 @@ Body {
   margin:-150px auto;
   text-align:center;
 }
-#freelance-information-template {
+#summary-information-template {
   justify-content:center;
   display:flex;
   margin:-20px auto;
 }
-.freelance-information-section {
+.summary-information-section {
   background:var(--main-theme-color);
   width:400px;
   height:160px;
   border-radius:20px;
   margin:100px auto;
   transition:0.4s;
+  cursor:pointer;
 }
-.freelance-information-section:hover {
+.summary-information-section:hover {
   transform:scale(1.04);
 }
-.inner-freelance-information-section {
+.inner-summary-information-section {
   background:var(--another-theme-color);
   width:340px;
   height:100px;
@@ -301,14 +306,14 @@ Body {
   margin:30px auto;
   transition:0.4s;
 }
-.freelance-information-section-description {
+.summary-information-section-description {
   padding-top:35px;
   font-family:Vazir;
   font-size:18px;
   color:white;
   text-align:center;
 }
-.freelance-information-section-description-specific-number {
+.summary-information-section-description-specific-number {
   text-shadow:0px 0px 5px white;
 }
 #contact-template {
@@ -323,6 +328,7 @@ Body {
   border-radius:20px;
   margin:100px auto;
   transition:0.4s;
+  cursor:pointer;
 }
 .contact-section:hover {
   transform:scale(1.04);
@@ -333,7 +339,6 @@ Body {
   justify-content:center;
   display:flex;
   margin:30px auto;
-  cursor:pointer;
   transition:0.5s;
 }
 .contact-icon:hover {
