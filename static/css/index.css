@@ -33,7 +33,7 @@ Body {
   user-select:none;
   overflow-x:hidden;
 }
-.header {
+#header {
   background:var(--main-theme-color);
   border-radius:10px;
   width:95%;
@@ -87,38 +87,38 @@ Body {
   text-align:center;
   margin-top:200px;
 }
-#about-template {
+#skill-template {
   justify-content:center;
   display:flex;
   margin:-20px auto;
 }
-.about-section {
+.skill-section {
   background:var(--main-theme-color);
   width:280px;
   height:420px;
   border-radius:20px;
   margin:100px auto;
-  transition:0.3s;
+  transition:0.4s;
   cursor:default;
 }
-.about-section:hover {
-  transform:scale(1.05);
+.skill-section:hover {
+  transform:scale(1.03);
 }
-.about-icon {
+.skill-icon {
   width:140px;
   height:140px;
   margin:30px auto;
   justify-content:center;
   display:flex;
 }
-.about-title {
+.skill-title {
   font-family:Aviny;
   font-size:32px;
   color:white;
   text-align:center;
   margin:-20px auto;
 }
-.about-description {
+.skill-description {
   font-family:Vazir;
   font-size:16px;
   color:white;
@@ -127,12 +127,12 @@ Body {
   text-align:center;
   margin:20px auto;
 }
-#poster-template {
+#project-template {
   justify-content:center;
   display:flex;
   margin:-20px auto;
 }
-.poster-section {
+.project-section {
   background:var(--main-theme-color);
   border-radius:20px;
   width:400px;
@@ -140,10 +140,10 @@ Body {
   margin:100px auto;
   transition:0.4s;
 }
-.poster-section:hover {
-  transform:scale(1.05);
+.project-section:hover {
+  transform:scale(1.03);
 }
-.poster-title {
+.project-title {
   background:var(--another-theme-color);
   border-radius:20px 20px 0 0;
   width:340px;
@@ -160,10 +160,10 @@ Body {
   transition:0.4s;
   cursor:pointer
 }
-.poster-title:hover {
+.project-title:hover {
   background:var(--another-deep-color);
 }
-.poster-image-container {
+.project-image-container {
   background:var(--another-theme-color);
   width:340px;
   height:200px;
@@ -179,17 +179,17 @@ Body {
   transition:0.4s;
   cursor:pointer
 }
-.poster-image-container:hover {
+.project-image-container:hover {
   background:var(--another-deep-color);
 }
-.poster-image {
+.project-image {
   width:340px;
   height:200px;
   display:flex;
   justify-content:center;
   margin:-20px auto;
 }
-.poster-button {
+.project-button {
   background:var(--another-theme-color);
   border-radius:0 0 20px 20px;
   width:340px;
@@ -206,15 +206,15 @@ Body {
   transition:0.4s;
   cursor:pointer
 }
-.poster-button:hover {
+.project-button:hover {
   background:var(--another-deep-color);
 }
-#video-template {
+#resume-template {
   justify-content:center;
   display:flex;
   margin:-20px auto;
 }
-.video-section {
+.resume-section {
   background:var(--main-theme-color);
   width:620px;
   height:340px;
@@ -222,7 +222,7 @@ Body {
   margin:100px auto;
   transition:0.4s;
 }
-.inner-video-section {
+.inner-resume-section {
   background:var(--another-theme-color);
   width:540px;
   height:260px;
@@ -230,10 +230,10 @@ Body {
   margin:-110px auto;
   transition:0.4s;
 }
-.video-section:hover {
-  transform:scale(1.05);
+.resume-section:hover {
+  transform:scale(1.03);
 }
-.video-title {
+.resume-title {
   font-family:Aviny;
   font-size:40px;
   color:white;
@@ -241,7 +241,7 @@ Body {
   padding-top:65px;
   text-align:center;
 }
-.video-description {
+.resume-description {
   font-family:Vazir;
   font-size:16px;
   color:white;
@@ -250,87 +250,39 @@ Body {
   margin:-150px auto;
   text-align:center;
 }
-#podcast-template {
+#freelance-information-template {
   justify-content:center;
   display:flex;
   margin:-20px auto;
 }
-.podcast-section {
+.freelance-information-section {
   background:var(--main-theme-color);
-  border-radius:20px;
   width:400px;
-  height:400px;
+  height:160px;
+  border-radius:20px;
   margin:100px auto;
   transition:0.4s;
 }
-.podcast-section:hover {
-  transform:scale(1.05);
+.freelance-information-section:hover {
+  transform:scale(1.03);
 }
-.podcast-title {
+.inner-freelance-information-section {
   background:var(--another-theme-color);
-  border-radius:20px 20px 0 0;
   width:340px;
-  height:60px;
-  border:none;
-  font-family:Aviny;
-  font-size:36px;
-  color:white;
-  text-align:center;
-  align-items:center;
-  justify-content:center;
-  display:flex;
+  height:100px;
+  border-radius:20px;
   margin:30px auto;
   transition:0.4s;
-  cursor:pointer
 }
-.podcast-title:hover {
-  background:var(--another-deep-color);
-}
-.podcast-image-container {
-  background:var(--another-theme-color);
-  width:340px;
-  height:200px;
-  border:none;
-  font-family:Aviny;
-  font-size:44px;
+.freelance-information-section-description {
+  padding-top:35px;
+  font-family:Vazir;
+  font-size:18px;
   color:white;
   text-align:center;
-  align-items:center;
-  justify-content:center;
-  display:flex;
-  margin:-20px auto;
-  transition:0.4s;
-  cursor:pointer
 }
-.podcast-image-container:hover {
-  background:var(--another-deep-color);
-}
-.podcast-image {
-  width:340px;
-  height:200px;
-  display:flex;
-  justify-content:center;
-  margin:-20px auto;
-}
-.podcast-button {
-  background:var(--another-theme-color);
-  border-radius:0 0 20px 20px;
-  width:340px;
-  height:60px;
-  border:none;
-  font-family:Aviny;
-  font-size:22px;
-  color:white;
-  text-align:center;
-  justify-content:center;
-  padding-top:10px;
-  display:flex;
-  margin:30px auto;
-  transition:0.4s;
-  cursor:pointer
-}
-.podcast-button:hover {
-  background:var(--another-deep-color);
+.freelance-information-section-description-specific-number {
+  text-shadow:0px 0px 5px white;
 }
 #contact-template {
   justify-content:center;
@@ -343,10 +295,10 @@ Body {
   height:420px;
   border-radius:20px;
   margin:100px auto;
-  transition:0.3s;
+  transition:0.4s;
 }
 .contact-section:hover {
-  transform:scale(1.05);
+  transform:scale(1.03);
 }
 .contact-icon {
   width:140px;
@@ -496,6 +448,33 @@ Body {
     width:240px;
     height:50px;
     font-size:18px;
+  }
+  #freelance-information-template {
+    flex-direction:column;
+    margin-top:10px;
+  }
+  .freelance-information-section {
+    background:var(--main-theme-color);
+    width:300px;
+    height:160px;
+    border-radius:20px;
+    margin:15px auto;
+    transition:0.4s;
+  }
+  .inner-freelance-information-section {
+    background:var(--another-theme-color);
+    width:240px;
+    height:100px;
+    border-radius:20px;
+    margin:30px auto;
+    transition:0.4s;
+  }
+  .freelance-information-section-description {
+    padding-top:35px;
+    font-family:Vazir;
+    font-size:14px;
+    color:white;
+    text-align:center;
   }
   #contact-template {
     flex-direction:column;

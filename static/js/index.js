@@ -22,12 +22,20 @@ function go_resume(){
     document.body.scrollTop = 2500;
   }
 }
-function go_contact(){
+function go_summary(){
   if (window.innerWidth <= 900){
     document.body.scrollTop = 5100;
   }
   else {
     document.body.scrollTop = 3315;
+  }
+}
+function go_contact(){
+  if (window.innerWidth <= 900){
+    document.body.scrollTop = 5980;
+  }
+  else {
+    document.body.scrollTop = 3940;
   }
 }
 function reload_page(){

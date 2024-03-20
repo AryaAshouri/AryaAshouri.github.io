@@ -10,13 +10,14 @@
     </title>
   </head>
   <body>
-    <header class="header" data-aos="fade-down">
+    <header id="header" data-aos="fade-down">
       <span>
-        <p onclick="reload_page()" title="Home" class="header-text">خانه</p>
-        <p onclick="go_skill()" title="About" class="header-text">مهارت</p>
-        <p onclick="go_project()" title="Poster" class="header-text">پروژه</p>
-        <p onclick="go_resume()" title="Podcast" class="header-text">رزومه</p>
-        <p onclick="go_contact()" title="Contact" class="header-text">ارتباط</p>
+        <p onclick="reload_page()" class="header-text">خانه</p>
+        <p onclick="go_skill()" class="header-text">مهارت</p>
+        <p onclick="go_project()" class="header-text">پروژه</p>
+        <p onclick="go_resume()" class="header-text">رزومه</p>
+        <p onclick="go_summary()" class="header-text">درباره</p>
+        <p onclick="go_contact()" class="header-text">ارتباط</p>
       </span>
     </header>
 
@@ -24,68 +25,87 @@
       <img id="main-icon" src="static/img/icon/icon.png">
     </div>
 
-    <p data-aos="fade-up" data-aos-duration="750" id="title-text">برخی مهارت های من</p>
-    <span data-aos="fade-up" data-aos-duration="750" id="about-template">
-      <div class="about-section">
-          <img class="about-icon" src="static/img/icon/web.png">
-          <p class="about-title">طراحی وبسایت و وبلاگ</p>
-          <div class="about-description"> طراحی صفحات وب بوسیله بروز ترین تکنولوژی های روز همراه با پایگاه داده و بک اند. دیزاین سایت همراه با برنامه های حرفه ای شامل فیگما و فتوشاپ و ادوبی ایلاستریتور</div>
+    <p data-aos="fade-up" data-aos-duration="750" id="title-text">مهارت و توانایی ها</p>
+    <span data-aos="fade-up" data-aos-duration="750" id="skill-template">
+      <div class="skill-section">
+          <img class="skill-icon" src="static/img/icon/web.png">
+          <p class="skill-title">طراحی وبسایت و وبلاگ</p>
+          <div class="skill-description"> طراحی صفحات وب بوسیله بروز ترین تکنولوژی های روز همراه با پایگاه داده و بک اند. دیزاین سایت همراه با برنامه های حرفه ای شامل فیگما و فتوشاپ و ادوبی ایلاستریتور</div>
       </div>
-      <div class="about-section">
-        <img class="about-icon" src="static/img/icon/pc.png">
-        <p class="about-title">طراحی اپلیکیشن ویندوز</p>
-        <div class="about-description">تولید اپلیکیشن و برنامه های تحت ویندوز بوسیله زبان برنامه نویسی پرکاربرد و معروف سی شارپ بخش ویندوز فرم بعلاوه طراحی پایگاه داده برای ذخیره اطلاعات مورد نیاز در آن</div>
+      <div class="skill-section">
+        <img class="skill-icon" src="static/img/icon/pc.png">
+        <p class="skill-title">طراحی اپلیکیشن ویندوز</p>
+        <div class="skill-description">تولید اپلیکیشن و برنامه های تحت ویندوز بوسیله زبان برنامه نویسی پرکاربرد و معروف سی شارپ بخش ویندوز فرم بعلاوه طراحی پایگاه داده برای ذخیره اطلاعات مورد نیاز در آن</div>
       </div>
-      <div class="about-section">
-        <img class="about-icon" src="static/img/icon/ic.png">
-        <p class="about-title">برنامه نویسی ربات و کیت</p>
-        <div class="about-description">علاوه بر توسعه و یادگیری زبان های پرکاربرد برای کار با سخت افزار قادر به برنامه نویسی و طراحی کیت های خام ربات به زبان اسمال بیسیک در فضای اختصاصی و حرفه ای بسکام</div>
+      <div class="skill-section">
+        <img class="skill-icon" src="static/img/icon/ic.png">
+        <p class="skill-title">برنامه نویسی ربات و کیت</p>
+        <div class="skill-description">علاوه بر توسعه و یادگیری زبان های پرکاربرد برای کار با سخت افزار قادر به برنامه نویسی و طراحی کیت های خام ربات به زبان اسمال بیسیک در فضای اختصاصی و حرفه ای بسکام</div>
       </div>
-      <div class="about-section">
-        <img class="about-icon" src="static/img/icon/db.png">
-        <p class="about-title">طراحی بانک اطلاعاتی</p>
-        <div class="about-description">طراحی و ایجاد بانک های اطلاعاتی برای ذخیره اطلاعات در فضای وب و یا اپ بوسیله دیتابیس های مطرح رده بالا با زبان برنامه نویسی پایتون و البته زبان کاربردی جاواسکریپت</div>
-      </div>
-    </span>
-
-    <p data-aos="fade-up" data-aos-duration="750" style="margin-top:220px;" id="title-text">آخرین پروژه های من</p>
-    <span data-aos="fade-up" data-aos-duration="750" id="poster-template">
-      <div class="poster-section">
-        <p class="poster-title">پروژه شماره یک</p>
-        <div class="poster-image-container">
-          <img class="poster-image" src="static/img/poster/blog_raw.png">
-        </div>
-        <a href="https://github.com/AryaAshouri/Guess-csharp-winform"><button class="poster-button" onclick="play_podcast()">مشاهده پروژه</button></a>
-      </div>
-      <div class="poster-section">
-        <p class="poster-title">پروژه شماره دو</p>
-        <div class="poster-image-container">
-          <img class="poster-image" src="static/img/poster/blog_raw.png">
-        </div>
-        <a href="https://github.com/AryaAshouri/Github-django-dashboard"><button class="poster-button" onclick="play_podcast()">مشاهده پروژه</button></a>
-      </div>
-      <div class="poster-section">
-        <p class="poster-title">پروژه شماره سه</p>
-        <div class="poster-image-container">
-          <img class="poster-image" src="static/img/poster/blog_raw.png">
-        </div>
-        <a href="https://github.com/AryaAshouri/Webshop-django-app"><button class="poster-button" onclick="play_podcast()">مشاهده پروژه</button></a>
+      <div class="skill-section">
+        <img class="skill-icon" src="static/img/icon/db.png">
+        <p class="skill-title">طراحی بانک اطلاعاتی</p>
+        <div class="skill-description">طراحی و ایجاد بانک های اطلاعاتی برای ذخیره اطلاعات در فضای وب و یا اپ بوسیله دیتابیس های مطرح رده بالا با زبان برنامه نویسی پایتون و البته زبان کاربردی جاواسکریپت</div>
       </div>
     </span>
 
-    <p data-aos="fade-up" data-aos-duration="750" style="margin-top:220px;" id="title-text">رزومه و فعالیت های من</p>
-    <span data-aos="fade-up" data-aos-duration="750" id="video-template">
-      <div class="video-section">
-        <a href="https://quera.org/profile/Red_Ninja"><div class="inner-video-section">
-          <p class="video-title">برو به کوئرای من سر بزن</p>
-          <p class="video-description">در این بخش از رزومه به بررسی سوالات الگوریتمی حل شده سایت کوئرا میپردازیم</p>
+    <p data-aos="fade-up" data-aos-duration="750" style="margin-top:220px;" id="title-text">پروژه های محبوب</p>
+    <span data-aos="fade-up" data-aos-duration="750" id="project-template">
+      <div class="project-section">
+        <p class="project-title">پروژه شماره یک</p>
+        <div class="project-image-container">
+          <img class="project-image" src="static/img/poster/blog_raw.png">
+        </div>
+        <a href="https://github.com/AryaAshouri/Guess-csharp-winform"><button class="project-button">مشاهده پروژه</button></a>
+      </div>
+      <div class="project-section">
+        <p class="project-title">پروژه شماره دو</p>
+        <div class="project-image-container">
+          <img class="project-image" src="static/img/poster/blog_raw.png">
+        </div>
+        <a href="https://github.com/AryaAshouri/Collector-discord-bot"><button class="project-button">مشاهده پروژه</button></a>
+      </div>
+      <div class="project-section">
+        <p class="project-title">پروژه شماره سه</p>
+        <div class="project-image-container">
+          <img class="project-image" src="static/img/poster/blog_raw.png">
+        </div>
+        <a href="https://github.com/AryaAshouri/AryaAshouri.github.io"><button class="project-button">مشاهده پروژه</button></a>
+      </div>
+    </span>
+
+    <p data-aos="fade-up" data-aos-duration="750" style="margin-top:220px;" id="title-text">رزومه و فعالیت ها</p>
+    <span data-aos="fade-up" data-aos-duration="750" id="resume-template">
+      <div class="resume-section">
+        <a href="https://quera.org/profile/Red_Ninja"><div class="inner-resume-section">
+          <p class="resume-title">برو به کوئرای من سر بزن</p>
+          <p class="resume-description">در این بخش از رزومه به بررسی سوالات الگوریتمی حل شده سایت کوئرا میپردازیم</p>
         </div></a>
       </div>
-      <div class="video-section">
-        <a href="https://www.github.com/aryaashouri"><div class="inner-video-section">
-          <p class="video-title">برو به گیتهاب من سر بزن</p>
-          <p class="video-description">در این بخش از رزومه به بعضی از پروژه هایی که تا به حال انجام دادم یه نگاهی میندازیم</p>
+      <div class="resume-section">
+        <a href="https://www.github.com/aryaashouri"><div class="inner-resume-section">
+          <p class="resume-title">برو به گیتهاب من سر بزن</p>
+          <p class="resume-description">در این بخش از رزومه به بعضی از پروژه هایی که تا به حال انجام دادم یه نگاهی میندازیم</p>
         </div></a>
+      </div>
+    </span>
+
+    <p data-aos="fade-up" data-aos-duration="750" style="margin-top:220px;" id="title-text">خلاصه فعالیت ها</p>
+    <span data-aos="fade-up" data-aos-duration="750" id="freelance-information-template">
+      <div class="freelance-information-section">
+        <div class="inner-freelance-information-section">
+          <p class="freelance-information-section-description">بالغ بر <span class="freelance-information-section-description-specific-number">صد</span> پروژه به اتمام رسیده</p>
+        </div>
+      </div>
+      <div class="freelance-information-section">
+        <div class="inner-freelance-information-section">
+          <p class="freelance-information-section-description">بالغ بر <span class="freelance-information-section-description-specific-number">چهل</span> مشتری پایه ثابت و راضی</p>
+        </div>
+      </div>
+      <div class="freelance-information-section">
+        <div class="inner-freelance-information-section">
+          <p class="freelance-information-section-description">بالغ بر <span class="freelance-information-section-description-specific-number">سه</span> سال تجربه برنامه نویسی</p>
+        </div>
       </div>
     </span>
 
