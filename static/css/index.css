@@ -102,7 +102,7 @@ Body {
   cursor:default;
 }
 .skill-section:hover {
-  transform:scale(1.03);
+  transform:scale(1.04);
 }
 .skill-icon {
   width:140px;
@@ -141,7 +141,7 @@ Body {
   transition:0.4s;
 }
 .project-section:hover {
-  transform:scale(1.03);
+  transform:scale(1.04);
 }
 .project-title {
   background:var(--another-theme-color);
@@ -231,7 +231,7 @@ Body {
   transition:0.4s;
 }
 .resume-section:hover {
-  transform:scale(1.03);
+  transform:scale(1.04);
 }
 .resume-title {
   font-family:Aviny;
@@ -264,7 +264,7 @@ Body {
   transition:0.4s;
 }
 .freelance-information-section:hover {
-  transform:scale(1.03);
+  transform:scale(1.04);
 }
 .inner-freelance-information-section {
   background:var(--another-theme-color);
@@ -298,7 +298,7 @@ Body {
   transition:0.4s;
 }
 .contact-section:hover {
-  transform:scale(1.03);
+  transform:scale(1.04);
 }
 .contact-icon {
   width:140px;
@@ -359,95 +359,68 @@ Body {
     font-size:28px;
     margin:0px 7px;
   }
-  #about-template {
+  #skill-template {
     flex-direction:column;
     margin-top:100px;
   }
-  .about-section {
+  .skill-section {
     margin-top:-70px;
     width:300px;
   }
-  #poster-template {
+  #project-template {
     flex-direction:column;
     margin-top:100px;
   }
-  .poster-section {
+  .project-section {
     margin-top:-70px;
     width:300px;
     height:340px;
   }
-  .poster-title {
+  .project-title {
     width:240px;
     height:50px;
     font-size:26px;
   }
-  .poster-image-container {
+  .project-image-container {
     width:240px;
     height:160px;
   }
-  .poster-image {
+  .project-image {
     width:280px;
     height:160px;
   }
-  .poster-button {
+  .project-button {
     width:240px;
     height:50px;
     font-size:18px;
   }
-  #video-template {
+  #resume-template {
     flex-direction:column;
     margin-top:100px;
   }
-  .video-section {
+  .resume-section {
     margin-top:-70px;
     width:300px;
     height:220px;
   }
-  .inner-video-section {
+  .inner-resume-section {
     width:240px;
     height:160px;
     margin-top:30px;
     margin-left:30px;
     position:absolute;
   }
-  .video-title {
+  .resume-title {
     font-size:28px;
     position:absolute;
     margin-top:-30px;
     margin-left:22px;
   }
-  .video-description {
+  .resume-description {
     font-size:10px;
     background:none;
     width:180px;
     margin-top:80px;
-  }
-  #podcast-template {
-    flex-direction:column;
-    margin-top:100px;
-  }
-  .podcast-section {
-    margin-top:-70px;
-    width:300px;
-    height:340px;
-  }
-  .podcast-title {
-    width:240px;
-    height:50px;
-    font-size:26px;
-  }
-  .podcast-image-container {
-    width:240px;
-    height:160px;
-  }
-  .podcast-image {
-    width:280px;
-    height:160px;
-  }
-  .podcast-button {
-    width:240px;
-    height:50px;
-    font-size:18px;
   }
   #freelance-information-template {
     flex-direction:column;
