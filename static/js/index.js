@@ -69,7 +69,12 @@ function change_brightness_mode(){
   }
 }
 function change_language(){
-  
+  document.getElementById("header-option-home").innerHTML = "Home"
+  document.getElementById("header-option-skill").innerHTML = "Skill"
+  document.getElementById("header-option-project").innerHTML = "Project"
+  document.getElementById("header-option-resume").innerHTML = "Resume"
+  document.getElementById("header-option-summary").innerHTML = "About"
+  document.getElementById("header-option-contact").innerHTML = "Contact"
 }
 function reload_page(){
   location.reload();

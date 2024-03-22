@@ -469,11 +469,11 @@ Body {
     width:180px;
     margin-top:80px;
   }
-  #freelance-information-template {
+  #summary-information-template {
     flex-direction:column;
     margin-top:10px;
   }
-  .freelance-information-section {
+  .summary-information-section {
     background:var(--main-theme-color);
     width:300px;
     height:160px;
@@ -481,7 +481,7 @@ Body {
     margin:15px auto;
     transition:0.4s;
   }
-  .inner-freelance-information-section {
+  .inner-summary-information-section {
     background:var(--another-theme-color);
     width:240px;
     height:100px;
@@ -489,7 +489,7 @@ Body {
     margin:30px auto;
     transition:0.4s;
   }
-  .freelance-information-section-description {
+  .summary-information-section-description {
     padding-top:35px;
     font-family:Vazir;
     font-size:14px;
