@@ -375,19 +375,19 @@ Body {
   text-align:center;
   margin:20px auto;
 }
-#contact-section-description-1 {
+#contact-description-gmail {
   text-align:justify;
   direction:rtl;
 }
-#contact-section-description-2 {
+#contact-description-telegram {
   text-align:justify;
   direction:rtl;
 }
-#contact-section-description-3 {
+#contact-description-discord {
   text-align:justify;
   direction:rtl;
 }
-#contact-section-description-4 {
+#contact-description-bale {
   text-align:justify;
   direction:rtl;
 }
@@ -409,24 +409,28 @@ Body {
   #header-option-section {
     margin-left:-30px;
   }
+  #header-option-section {
+    flex:1;
+    margin:0px auto;
+  }
   .header-text {
-    font-size:20px;
+    font-size:18px;
     margin:13px 7px;
   }
   .header-text:hover {
-    font-size:28px;
-    margin:6px 8px;
+    font-size:18px;
+    margin:13px 7px;
   }
   .language-mode-icon {
     width:40px;
     height:40px;
-    margin-left:10px;
+    margin-left:11px;
     margin-top:10px;
   }
   .brightness-mode-icon {
     width:40px;
     height:40px;
-    margin-left:-35px;
+    margin-left:8px;
     margin-top:10px;
   }
   #main-section {
