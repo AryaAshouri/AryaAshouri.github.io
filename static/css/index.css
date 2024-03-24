@@ -1,6 +1,7 @@
 * {
   padding:0px;
   margin:0px;
+  user-select:none;
   scroll-behavior:smooth;
 }
 :root {
@@ -30,7 +31,6 @@ input::selection {
 }
 Body {
   background-color:rgb(7, 7, 13);
-  user-select:none;
   overflow-x:hidden;
 }
 #header-language-section {
