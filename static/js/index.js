@@ -6,7 +6,7 @@ function go_skill(){
     document.body.scrollTop = 790;
   }
 }
-function go_project(){
+function go_projects(){
   if (window.innerWidth <= 900){
     document.body.scrollTop = 2740;
   }
@@ -69,12 +69,43 @@ function change_brightness_mode(){
   }
 }
 function change_language(){
+  document.title = "Arya Ashouri"
   document.getElementById("header-option-home").innerHTML = "Home"
   document.getElementById("header-option-skill").innerHTML = "Skill"
-  document.getElementById("header-option-project").innerHTML = "Project"
+  document.getElementById("header-option-projects").innerHTML = "Project"
   document.getElementById("header-option-resume").innerHTML = "Resume"
   document.getElementById("header-option-summary").innerHTML = "About"
   document.getElementById("header-option-contact").innerHTML = "Contact"
+  document.getElementById("skill-title-text").innerHTML = "Some of my Skills"
+  document.getElementById("projects-title-text").innerHTML = "Popular Projects"
+  document.getElementById("resume-title-text").innerHTML = "Resume and Activities"
+  document.getElementById("summary-title-text").innerHTML = "Summary of Activities"
+  document.getElementById("contact-title-text").innerHTML = "Contact Information"
+  document.getElementById("skill-title-web").innerHTML = "Designing Web Pages"
+  document.getElementById("skill-web-description").innerHTML = "Designing web pages using the most recent technologies along with sql database and backend. Web designing with programs such as&#160; Photoshop & Illustrator"
+  document.getElementById("skill-pc-description").innerHTML = "Production of applications and programs under Windows using the widely used and well-known C# programming language plus using SQL to storing all the data"
+  document.getElementById("skill-ic-description").innerHTML = "In addition to develop coding & professional skills to work with hardware, I'm capable of coding and designing raw kits in Small Basic Which is so much difficult"
+  document.getElementById("skill-db-description").innerHTML = "At the same time designing and creating databases to store the data in the web or app space using high-end databases for exclusive Windows applications"
+  document.getElementById("skill-title-pc").innerHTML = "Contact Information"
+  document.getElementById("skill-title-ic").innerHTML = "Contact Information"
+  document.getElementById("skill-title-db").innerHTML = "Contact Information"
+  document.getElementById("first-project-title").innerHTML = "First Project"
+  document.getElementById("second-project-title").innerHTML = "Second Project"
+  document.getElementById("third-project-title").innerHTML = "Third Project"
+  document.getElementById("visit-project-button-1").innerHTML = "Visit the Project"
+  document.getElementById("visit-project-button-2").innerHTML = "Visit the Project"
+  document.getElementById("visit-project-button-3").innerHTML = "Visit the Project"
+  document.getElementById("visit-quera-page-title").innerHTML = "Visit My Quera Account"
+  document.getElementById("visit-quera-page-description").innerHTML = "In this section of the resume, we take a look at solved questions of Quera website"
+  document.getElementById("visit-github-page-title").innerHTML = "Visit My Github Account"
+  document.getElementById("visit-github-page-description").innerHTML = "In this section of my resume, we take a look at some of the projects I have done"
+  document.getElementById("first-summary-section").innerHTML = "More than 100 projects completed"
+  document.getElementById("second-summary-section").innerHTML = "More than 40 satisfied customers"
+  document.getElementById("third-summary-section").innerHTML = "More than 3 years of experience"
+  document.getElementById("contact-section-description-1").innerHTML = "You can just contact me on the mentioned messengers through the link inserted in the compass and send your criticisms and effective Ideas in a single script"
+  document.getElementById("contact-section-description-2").innerHTML = "You can just contact me on the mentioned messengers through the link inserted in the compass and send your criticisms and effective Ideas in a single script"
+  document.getElementById("contact-section-description-3").innerHTML = "You can just contact me on the mentioned messengers through the link inserted in the compass and send your criticisms and effective Ideas in a single script"
+  document.getElementById("contact-section-description-4").innerHTML = "You can just contact me on the mentioned messengers through the link inserted in the compass and send your criticisms and effective Ideas in a single script"
 }
 function reload_page(){
   location.reload();

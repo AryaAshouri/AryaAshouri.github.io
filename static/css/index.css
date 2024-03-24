@@ -32,7 +32,6 @@ Body {
   background-color:rgb(7, 7, 13);
   user-select:none;
   overflow-x:hidden;
-  transition: background-color 0.5s ease-in-out;
 }
 #header-language-section {
   flex:1;
@@ -109,7 +108,7 @@ Body {
   from { transform:rotate(0deg);}
   to { transform:rotate(360deg);}
 }
-#title-text {
+.title-text {
   font-family:Aviny;
   font-size:44px;
   color:white;
@@ -155,6 +154,22 @@ Body {
   height:170px;
   text-align:center;
   margin:20px auto;
+}
+#skill-web-description {
+  text-align:justify;
+  direction:rtl;
+}
+#skill-pc-description {
+  text-align:justify;
+  direction:rtl;
+}
+#skill-ic-description {
+  text-align:justify;
+  direction:rtl;
+}
+#skill-db-description {
+  text-align:justify;
+  direction:rtl;
 }
 #project-template {
   justify-content:center;
@@ -359,6 +374,22 @@ Body {
   height:170px;
   text-align:center;
   margin:20px auto;
+}
+#contact-section-description-1 {
+  text-align:justify;
+  direction:rtl;
+}
+#contact-section-description-2 {
+  text-align:justify;
+  direction:rtl;
+}
+#contact-section-description-3 {
+  text-align:justify;
+  direction:rtl;
+}
+#contact-section-description-4 {
+  text-align:justify;
+  direction:rtl;
 }
 .footer {
   background:var(--main-theme-color);
