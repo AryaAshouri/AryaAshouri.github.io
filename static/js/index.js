@@ -112,6 +112,7 @@ function change_language(){
     document.getElementById("contact-description-discord").innerHTML = "شما می توانید از طریق لینک درج شده درون قطب نما، در پیام رسان های مذکور با بنده ارتباط بگیرید و انتقاد ها و پیشنهاد هایی که دارید را در قالب پیامی در پیامرسان بفرستید"
     document.getElementById("contact-description-bale").innerHTML = "شما می توانید از طریق لینک درج شده درون قطب نما، در پیام رسان های مذکور با بنده ارتباط بگیرید و انتقاد ها و پیشنهاد هایی که دارید را در قالب پیامی در پیامرسان بفرستید"
     document.getElementById("brightness-icon").style.marginLeft = ""
+
   }
   else if (document.title == "آریا آشوری"){
     document.title = "Arya Ashouri"
@@ -155,7 +156,12 @@ function change_language(){
     document.getElementById("contact-description-telegram").innerHTML = "You can just contact me on the mentioned messengers through the link inserted in the compass and send your criticisms and effective Ideas in a single script"
     document.getElementById("contact-description-discord").innerHTML = "You can just contact me on the mentioned messengers through the link inserted in the compass and send your criticisms and effective Ideas in a single script"
     document.getElementById("contact-description-bale").innerHTML = "You can just contact me on the mentioned messengers through the link inserted in the compass and send your criticisms and effective Ideas in a single script"
-    document.getElementById("brightness-icon").style.marginLeft = "-7"
+    if (window.innerWidth <= 900){
+      document.getElementById("brightness-icon").style.marginLeft = "-7"
+    }
+    if (window.innerWidth > 900){
+      document.getElementById("brightness-icon").style.marginLeft = "0"
+    }
   }
 }
 function reload_page(){
