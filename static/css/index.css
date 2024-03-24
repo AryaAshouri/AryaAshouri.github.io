@@ -43,9 +43,8 @@ Body {
 }
 #header-brightness-section {
   flex:1;
-  justify-content:center;
-  display:flex;
   direction:rtl;
+  padding-right:10px;
 }
 #header {
   background:var(--main-theme-color);
@@ -410,16 +409,15 @@ Body {
     margin-left:-30px;
   }
   #header-option-section {
-    flex:1;
     margin:0px auto;
   }
   .header-text {
-    font-size:18px;
-    margin:13px 7px;
+    font-size:17px;
+    margin:16px 6px;;
   }
   .header-text:hover {
-    font-size:18px;
-    margin:13px 7px;
+    font-size:17px;
+    margin:16px 7px;
   }
   .language-mode-icon {
     width:40px;
